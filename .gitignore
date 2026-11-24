@@ -10,3 +10,4 @@ local.properties
 .env.*
 .idea/
 .DS_Store
+reports/*.txt
