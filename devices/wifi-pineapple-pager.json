@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "project": "CIPHERX",
+  "device": {
+    "name": "WiFi Pineapple Pager",
+    "model": "Mark VII",
+    "host": "172.16.52.1",
+    "port": 22,
+    "username": "root",
+    "connection": "ssh",
+    "authentication": "existing_ssh_key",
+    "strict_host_key_checking": true
+  },
+  "security": {
+    "read_only_mode": true,
+    "require_user_approval": true,
+    "allow_password_storage": false,
+    "allow_payload_execution": false,
+    "allow_recon_control": false
+  },
+  "diagnostics": {
+    "enabled": true,
+    "commands": [
+      "uptime",
+      "uname -a",
+      "ip addr",
+      "ip route",
+      "df -h",
+      "free -h",
+      "iw dev"
+    ]
+  },
+  "ai": {
+    "enabled": false,
+    "api_key_required": false
+  }
+}
